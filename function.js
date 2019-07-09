@@ -528,15 +528,20 @@ function randomBetweenNumbers(min, max) {
 /*
 22
 Write a function called scoreInUniversty
-that takes 2 parameters
-and returns a random number between them
-** hint: you can seacrh using MDN
-Ex: randomBetweenNumbers(1,8)
-=> 7.5412
-Ex: randomBetweenNumbers(3,100)
-=> 23
+that takes 1 parameters
+and returns the alpabet in the unevirsty
+A => 95-100
+B => 85-94
+C => 70-84
+D=> 50-69
+F=> 0-49
+Ex: scoreInUniversty(96)
+=> "A"
+Ex: scoreInUniversty(3)
+=> "F"
+Ex: scoreInUniversty(71)
+=> "C"
 */
-
 
 function socreInUniversity(grade){
 	if(grade >= 90 && grade < 100)
@@ -554,3 +559,140 @@ function socreInUniversity(grade){
 }
 
 
+/*
+23
+Write a function called counter
+that will returns a number bigger
+than the one that returnd before
+and start from 0
+Ex: counter()
+=> 1
+Ex: counter()
+=> 2
+Ex: counter()
+=> 3
+*/
+
+
+function counter(){
+	if(counter.num === undefined)
+		counter.num = 0;
+
+	counter.num += 1;
+	return counter.num;
+}
+
+
+
+
+
+
+
+
+/*
+24
+Write a function called resetCounter
+that will reset the previuos function
+and return the number before reset and
+a string say that the counter reset
+Ex: counter()
+=> 1
+Ex: counter()
+=> 2
+Ex: counter()
+=> 3
+Ex: resetCounter()
+=> 3 and the counter reset now
+Ex: counter()
+=> 1
+Ex: counter()
+=> 2
+Ex: resetCounter()
+=> 2 and the counter reset now
+Ex: counter()
+=> 1
+*/
+
+function resetCounter() {
+	var oldValue = counter.num;
+	counter.num = 0;
+	return oldValue;
+}
+
+
+
+// solution #2 for question 23 and 24
+// var c1 = 0;
+
+// function counter1 () {
+// 	c1 = c1 + 1;
+// 	return c1;
+// }
+
+// function restCounter1() {
+// 	var oldValue = c1;
+// 	c1 = 0;
+// 	return oldValue;
+// }
+
+
+
+
+
+
+
+
+/*
+25
+// this question is in progress wait
+Write a function called guessMe
+that will take an argument (number)
+if the number not between 0 and 5 [0,1,2,3,4]
+it will return "Please insert a number between 0 and 5"
+if it is between 0 and 5, and guessed the correct number 0-5 [0,1,2,3,4]
+will return "you guess me correctly"
+if it is between 0 and 5, and not the same number randomly 0-5 [0,1,2,3,4]
+will return "you didnt guess me I was 3"
+Ex: guessMe(0)
+=> "you didnt guess me I was 3"
+Ex: guessMe(10)
+=>"Please insert a number between 0 and 5"
+Ex: guessMe(-5)
+=> "Please insert a number between 0 and 5"
+Ex: guessMe(3)
+=> "you guess me correctly"
+*/
+
+function guessMe(number) {
+	var random = Math.floor(Math.random() * 5);
+	if(number < 0 || number >= 5)
+		return 'Please insert a number between 0 and 5';
+	
+	if (random === number)
+		return "you guess me correctly";
+	else 
+		return "you didnt guess me I was " + random;
+}
+
+
+
+/*
+26
+// this question is in progress wait
+Write a function called guessMe
+that will take an argument (number)
+if the number not between 0 and 5 [0,1,2,3,4]
+it will return "Please insert a number between 0 and 5"
+if it is between 0 and 5, and guessed the correct number 0-5 [0,1,2,3,4]
+will return "you guess me correctly"
+if it is between 0 and 5, and not the same number randomly 0-5 [0,1,2,3,4]
+will return "you didnt guess me I was 3"
+Ex: guessMe(0)
+=> "you didnt guess me I was 3"
+Ex: guessMe(10)
+=>"Please insert a number between 0 and 5"
+Ex: guessMe(-5)
+=> "Please insert a number between 0 and 5"
+Ex: guessMe(3)
+=> "you guess me correctly"
+*/
