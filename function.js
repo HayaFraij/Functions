@@ -99,8 +99,15 @@ accept 2 parameters and calculate the multiply of these 2 numbers
 
 Ex: multiply(3,4)
 => 12
-
 */
+
+function multipy(num1, num2) {
+	var multiplication = num1 * num2;
+	return multiplication;
+}
+
+
+
 
 
 /*
@@ -119,6 +126,18 @@ Ex: canIGetADrivingLicense(17)
 */
 
 
+function canIGetADrivingLicense(age) {
+	if(age >= 20) {
+		return 'yes';
+	} 
+
+	var x = 20 - age;
+	return 'please come back after ' + x + ' years to get one.';
+}
+
+
+
+
 /*
 10
 Write a function called sameLength
@@ -134,6 +153,19 @@ Ex: sameLength("tree","car")
 => false
 */
 
+function sameLength(str1, str2) {
+	if (str1.length === str2.length)
+		return true;
+	else 
+		return false;
+}
+
+
+
+
+
+
+
 /*
 11
 Write a function called largerNubmer
@@ -146,6 +178,17 @@ Ex: largerNubmer(5,6)
 Ex: largerNubmer(5,3)
 => 5
 */
+function largerNubmer(num1, num2) {
+	if (num1 > num2)
+		return num1;
+	return num2;
+}
+
+
+
+
+
+
 
 
 /*
@@ -161,6 +204,23 @@ Ex: smallerNubmer(5,99,34)
 => 5
 */
 
+
+function smallerNubmer(num1, num2, num3) {
+	var minNum = num1;
+	if(num2 < minNum)
+		minNum = num2;
+	if(num3 < minNum)
+		minNum = num3;
+
+	return minNum;
+}
+
+
+
+
+
+
+
 /*
 13
 Write a function called shorterString
@@ -171,6 +231,32 @@ Ex: shorterString("air","school","car","by","github")
 => by
 */
 
+function shorterString(str1, str2, str3, str4, str5){
+	var shorterStr = str1;
+
+	if(shorterStr.length > str2.length)
+		shorterStr = str2;
+
+	if(shorterStr.length > str3.length)
+		shorterStr = str3;
+	
+	if(shorterStr.length > str4.length)
+		shorterStr = str4;
+	
+	if(shorterStr.length > str5.length)
+		shorterStr = str5;
+	
+	return shorterStr;
+}
+
+
+
+
+
+
+
+
+
 /*
 14
 Write a function called longerString
@@ -180,6 +266,30 @@ and return the first longer string
 Ex: shorterString("air","school","car","github")
 => school
 */
+
+function longerString(str1, str2, str3, str4){
+	var longerStr = str1;
+
+	if(longerStr.length < str2.length)
+		longerStr = str2;
+
+	if(longerStr.length < str3.length)
+		longerStr = str3;
+	
+	if(longerStr.length < str4.length)
+		longerStr = str4;
+	
+	
+	return longerStr;
+}
+
+
+
+
+
+
+
+
 
 /*
 
