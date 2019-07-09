@@ -36,6 +36,7 @@ Ex: calculateSupply(30, 3);
 */
 
 
+
 /*
 4
 Write a function called greet that:
