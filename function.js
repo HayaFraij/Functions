@@ -98,7 +98,7 @@ function tellFortune(numOfChilde, partnerName, geoLocation, jobTitle){
 	return sentence;
 }
 
-tellFortune("2","test","jaban", "industrial Engineering")
+// tellFortune("2","test","jaban", "industrial Engineering")
 
 
 
@@ -110,8 +110,8 @@ function calculateDogAge(puppyAge){
 	return "Your doggie is " + puppyAge + "years old in dog years!";
 }
 
-console.log(calculateDogAge(2));
-console.log(calculateDogAge(6));
+// console.log(calculateDogAge(2));
+// console.log(calculateDogAge(6));
 
 
 
@@ -122,7 +122,8 @@ function calculateSupply(age, amountPerDay){
 	var amount = amountPerDay * age * 365;
 	return "You will need " + amount + " to last you until the ripe old age of " + age;	
 }
-console.log(calculateSupply(24, 2));
+
+// console.log(calculateSupply(24, 2));
 
 
 
@@ -173,7 +174,7 @@ function cube(num) {
 	return num * num * num;
 }
 
-console.log(cube(4))
+// console.log(cube(4))
 
 
 /*
@@ -368,6 +369,109 @@ function longerString(str1, str2, str3, str4){
 	return longerStr;
 }
 
+/*
+15
+Write a function called isEven
+that accept 1 argument as a number,
+and return true if this number is even
+and false if this number is odd
+Ex: isEven(1)
+=> false
+Ex: isEven(2)
+=> true
+*/
+
+function isEven(num) {
+
+	if(num % 2 === 0)
+		return true;
+	return false;
+}
+
+
+
+
+
+
+/*
+16
+Write a function called isOdd
+that accept 1 argument as a number,
+and return true if this number is Odd
+and false if this number is Even
+Ex: isOdd(4)
+=> false
+Ex: isOdd(5)
+=> true
+*/
+
+
+function isOdd(num) {
+
+	if(num % 2 === 0)
+		return false;
+	return true;
+}
+
+
+
+/*
+17
+Write a function called positive
+that accept 1 argument as a number,
+and return the positive version of the number passed
+Ex: positive(4)
+=> 4
+Ex: positive(-5)
+=> 5
+*/
+
+function positive(number) {
+	if(number > 0)
+		return number;
+	else 
+		return number * -1;
+}
+
+
+
+/*
+18
+Write a function called fullName
+that accept two parameters, firstName and lastName,
+and returns the firstName and lastName concatenated
+together with a space in between.
+Ex: fullName("Mohammad","Jouza")
+=> "Mohammad Jouza"
+Ex: fullName("Alex", "Mercer")
+=> "Alex Mercer"
+*/
+
+function fullName(firstName, lastName) {
+	return firstName + ' ' + lastName;
+}
+
+
+
+
+
+
+
+/*
+19
+Write a function called average
+that takes five numbers as inputs
+and returns the average of those numbers.
+Ex: average(1,2,3,4,5)
+=> 3
+Ex: average(5,7,9,3,5)
+=> 5.8
+*/
+
+function average(num1, num2, num3, num4, num5) {
+	return (num1 + num2 + num3 + num4 + num5) / 5;
+}
+
 
 
 
@@ -377,31 +481,76 @@ function longerString(str1, str2, str3, str4){
 
 
 /*
-
-
+20
+Write a function called randomNumber
+that didnt takes any parameter
+and returns a random number between 0-1
+** hint: you can seacrh using MDN
+Ex: randomNumber()
+=> 0.2278
+Ex: randomNumber()
+=> 0.475
 */
+
+function randomNumber() {
+	return Math.random();
+}
+
+
+
+
+
 
 /*
-
-
+21
+Write a function called randomBetweenNumbers
+that takes 2 parameters
+and returns a random number between them
+** hint: you can seacrh using MDN
+Ex: randomBetweenNumbers(1,8)
+=> 7.5412
+Ex: randomBetweenNumbers(3,100)
+=> 23
 */
+
+function randomBetweenNumbers(min, max) {
+	if(max === undefined || min === undefined)
+		return 'Enter min and max values.';
+
+	return Math.floor(Math.random() * (max - min)) + min
+}
+
+
+
+
+
 
 /*
-
-
+22
+Write a function called scoreInUniversty
+that takes 2 parameters
+and returns a random number between them
+** hint: you can seacrh using MDN
+Ex: randomBetweenNumbers(1,8)
+=> 7.5412
+Ex: randomBetweenNumbers(3,100)
+=> 23
 */
 
-/*
+
+function socreInUniversity(grade){
+	if(grade >= 90 && grade < 100)
+		return 'A';
+	if(grade >= 80 && grade < 90)
+		return 'B';
+	if(grade >= 70 && grade < 80)
+		return 'C';
+	if(grade >= 60 && grade < 70)
+		return 'D';
+	if(grade >= 50 && grade < 60)
+		return 'E';
+	if(grade < 50)
+		return 'F';
+}
 
 
-*/
-
-/*
-
-
-*/
-
-/*
-
-
-*/
