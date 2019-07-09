@@ -91,6 +91,89 @@ Ex: cube(4)
 => 64
 */
 
+// #1
+function tellFortune(numOfChilde, partnerName, geoLocation, jobTitle){
+	var sentence = "You will be an " + jobTitle + " in " + geoLocation + " and married to " + partnerName + " with " + numOfChilde + " kids.";
+	return sentence;
+}
+
+tellFortune("2","test","jaban", "industrial Engineering")
+
+
+
+
+
+// #2
+function calculateDogAge(puppyAge){
+	puppyAge = puppyAge * 7;
+	return "Your doggie is " + puppyAge + "years old in dog years!";
+}
+
+console.log(calculateDogAge(2));
+console.log(calculateDogAge(6));
+
+
+
+
+
+//#3
+function calculateSupply(age, amountPerDay){
+	var amount = amountPerDay * age * 365;
+	return "You will need " + amount + " to last you until the ripe old age of " + age;	
+}
+console.log(calculateSupply(24, 2));
+
+
+
+
+
+//#4
+function greetThat(name){
+	return "Hello " + name + " ^_^"
+}
+
+
+
+
+// #5 
+function double(cat) {
+  return 2 * x;
+} // x isn't defined
+
+// function double(7) {
+//   return 2 * 7;
+// } // the argument should be variable!
+
+// function double('7') {
+//   return 2 * 'x';
+// } // result will be NAN! we can't mutiply num by string & the argument should be variable;
+
+
+
+
+
+//#6 
+function double1(x) {
+  return 2 * x ;
+}
+function double2 (x){
+  return 2 * x; 
+}
+function double3(x) {
+  return 2 * x;
+}
+
+
+
+
+
+//#7
+function cube(num) {
+	return num * num * num;
+}
+
+console.log(cube(4))
+
 
 /*
 8
@@ -100,6 +183,7 @@ accept 2 parameters and calculate the multiply of these 2 numbers
 Ex: multiply(3,4)
 => 12
 */
+
 
 function multipy(num1, num2) {
 	var multiplication = num1 * num2;
